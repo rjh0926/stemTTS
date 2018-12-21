@@ -1,0 +1,4 @@
+test succeed
+line2
+ÀîÚ«
+line4

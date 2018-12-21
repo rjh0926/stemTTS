@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>stemTTS</title>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="../css/1_z.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" style="width: 105%;">
+    <div class="row clearfix" style="left:20%; width: 110%;">
+        <div class="col-md-8 column" style="left:5%;">
+            <h2>
+                STEM虚拟实习教师
+            </h2>
+        </div>
+        <div class="col-md-4 column">
+            <ul class="nav nav-pills">
+                <br>
+
+                <li style="left: 150px">
+                    <a href="#"> <span class="badge pull-right"></span>欢迎，xxx</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <!--<div id="sidebar-wrapper" style="display: inline-block;left:20%;top:9.5%">-->
+        <div id="sidebar-wrapper" style="display: inline-block;top:9.5%;height: 600px">
+            <ul class="sidebar-nav" style="display: inline-block;top:5%">
+                <li class="sidebar-brand">
+                    <a>
+                        邮件列表
+                    </a>
+                </li>
+                <li>
+                    <a href="mail1.html">欢迎实习生&nbsp;<img class="envelop" src="../image/yidu.png" height="12"
+                                                         width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail2&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail3&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail4&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail5&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail6&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+                <li>
+                    <a href="#">mail7&nbsp;<img class="envelop" src="../image/weidu.png" height="12" width="12"/></a>
+                </li>
+            </ul>
+
+            <div style="float: right">
+                <a class="btn btn-secondary" id="menu-toggle" href="#menu-toggle" style="color: #fff;">
+                    <span class="glyphicon glyphicon-chevron-left" style="left:10px"></span></a>
+            </div>
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row clearfix" style="width: 85%">
+                    <!--<div class="row clearfix" style="width: 85%;" id="box">-->
+                    <!--<div class="col-md-4 column" id="left" style="display: inline-block; left:3.5%; width: 60%">-->
+                    <div class="col-md-4 column" id="left"
+                         style="display: inline-block; width: 60%;padding-right: 0px;">
+                        <ul class="nav nav-pills" style="background-color: #daedf7;width:105%;">
+                            <li>
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li class="active">
+                                <a href="receive.html">收件箱</a>
+                            </li>
+                            <li>
+                                <a href="send.html">发件箱</a>
+                            </li>
+                            <li>
+                                <a href="library.html">资源库</a>
+                            </li>
+                        </ul>
+
+                        <!------------------------------------------------------------收件箱--------------------------------------------------------------------------------------->
+                        <div class="panel panel-info" style="overflow:hidden; width: 105%;">
+
+                            <style>
+                                p {
+                                    margin: 0 auto
+                                }
+
+                                /* 设置p上下距离为0，左右自动 */
+                            </style>
+                            <div class="panel-footer" style="height:120px;width: 100%;">
+                                <!--此处用空格做样式可能导致问题-->
+                                <!--<p id='r_title'>邮件主题: 任务1.欢迎实习生-->
+                                <!--<button id="response" class="blue" onclick="createAndJump()">-->
+                                <!--回复邮件-->
+                                <!--</button>-->
+                                <!--</p>-->
+                                <!--<p id="sender">发件人：张华</p>-->
+                                <!--<p id="r_time">时间：</p>-->
+                                <!--<p id="r_receiver">收件人：孙三</p>-->
+                                <!--&lt;!&ndash;<p id="r_copy">copy</p>&ndash;&gt;-->
+                                <!--<p id="r_file">📎附件: xxx.pdf</p>-->
+
+                            </div>
+                            <script type="text/javascript">
+                                document.getElementById('container1').onscroll = function () {
+                                    console.log("scrolling");
+                                };
+                            </script>
+
+                            <div id="container1" style="height:430px;overflow-y: scroll;">
+                                <div class="panel-body" style="float:left;">
+                                    <!--欢迎你来到华师附小实习。我是我校四年级的年级组长张华。在你实习期间，我将担任你的实习导师，负责实习任务的安排、相关指导及表现评价工作。-->
+                                    <!--这次实习的主要任务是要设计适合我们学校1~6年级学生的STEM校本课程，你将和其他参加此次实习的同学以小组的形式合作完成一个单元的STEM课程设计。实习活动包括自主研修和项目组会两部分。在实习结束后，我会根据你在此期间的工作表现，向你所在的院系提交实习生评估报告。希望你在实习结束后能学有所获。-->
+                                    <!--你们的小组将由分别来自科学（Science）、信息技术(Technology)、工程实践(Engineering)和数学(Math)四个教研室的实习生组成。下面请你先通过实习平台的聊天室和你的小组成员打个招呼吧。-->
+                                    <!--在正式开始工作之前，请你熟悉一下我们学校开发STEM课程的工作流程（请见附件），我们在完成此次STEM课程开发任务的时候将会依照这个流程开展。为了确保你对于工作流程了解无误，请根据附件的说明，撰写一个工作流程的总结纪要（摘要）。另外请你填写一份关于参加STEM教师实习的调查问卷（网址:-->
+                                    <!--###https://www.wjx.cn/jq/28849532.aspx ）。-->
+                                    <!--请你在本周二晚上11点之前回复纪要给我。-->
+                                    <!--欢迎你来到华师附小实习。我是我校四年级的年级组长张华。在你实习期间，我将担任你的实习导师，负责实习任务的安排、相关指导及表现评价工作。-->
+                                    <!--这次实习的主要任务是要设计适合我们学校1~6年级学生的STEM校本课程，你将和其他参加此次实习的同学以小组的形式合作完成一个单元的STEM课程设计。实习活动包括自主研修和项目组会两部分。在实习结束后，我会根据你在此期间的工作表现，向你所在的院系提交实习生评估报告。希望你在实习结束后能学有所获。-->
+                                    <!--你们的小组将由分别来自科学（Science）、信息技术(Technology)、工程实践(Engineering)和数学(Math)四个教研室的实习生组成。下面请你先通过实习平台的聊天室和你的小组成员打个招呼吧。-->
+                                    <!--在正式开始工作之前，请你熟悉一下我们学校开发STEM课程的工作流程（请见附件），我们在完成此次STEM课程开发任务的时候将会依照这个流程开展。为了确保你对于工作流程了解无误，请根据附件的说明，撰写一个工作流程的总结纪要（摘要）。另外请你填写一份关于参加STEM教师实习的调查问卷（网址:-->
+                                    <!--###https://www.wjx.cn/jq/28849532.aspx ）。-->
+                                    <!--请你在本周二晚上11点之前回复纪要给我。-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--chat room-->
+                    <div class="col-md-4 column" id="right"
+                         style=" display: inline-block;left:4%;width:40%;padding-left: 0px;padding-right: 0px;">
+                        <div class="panel panel-primary" id="handle" style="width:100%; margin-bottom: 3px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="text-align: center">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小组聊天室&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <select id="online">
+                                        <option>在线列表</option>
+                                        <option>梁晓颖(在线)</option>
+                                        <option>王亦冰(在线)</option>
+                                        <option>陆荣欣(离线)</option>
+                                        <option>故孜努尔(离线)</option>
+
+                                    </select>
+                                </h3>
+                            </div>
+                            <script type="text/javascript">
+                                document.getElementById('container').onscroll = function () {
+                                    console.log("scrolling");
+                                };
+                            </script>
+
+                            <div id="container" style="height:420px;overflow-y: scroll;">
+                                <div class="sender">
+                                    <div>
+                                        梁晓颖
+                                    </div>
+                                    <div>
+                                        <div class="bg" style="margin-top: 5px;">
+                                            <div class="left_triangle"></div>
+                                            <span> 聊天.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right -->
+                                <div class="receiver">
+                                    <div>
+                                        我
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="right_triangle"></div>
+                                            <span> 1111hello worldhello, man!hello, man!hello, man!hello, man!hello, man!2222  聊天工具浏览器CSS3气泡对话框因为css3尚未形成标准,所以现行的浏览器对于css3...为了减少不必须要的html元素,我们通过伪属性来给对话框添加”尾巴“ .</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right -->
+                                <div class="receiver">
+                                    <div>
+                                        我
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="right_triangle"></div>
+                                            <span> 111</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right -->
+                                <div class="receiver">
+                                    <div>
+                                        我
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="right_triangle"></div>
+                                            <span>形成标准,</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Left -->
+                                <div class="sender">
+                                    <div>
+                                        王亦冰
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="left_triangle"></div>
+                                            <span> 聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Left -->
+                                <div class="sender">
+                                    <div>
+                                        陆荣欣
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="left_triangle"></div>
+                                            <span> 聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Left -->
+                                <div class="sender">
+                                    <div>
+                                        故孜努尔
+                                    </div>
+                                    <div>
+                                        <div class="bg">
+                                            <div class="left_triangle"></div>
+                                            <span> 聊天形形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成标准形成标准形成标准.聊天形成标准形成</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" style="height:90px;">
+                                <textarea style="width:100%;height:100%; background-color: #fff;border:0px;"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-6 column">
+                                <button type="button" class="btn btn-block btn-default">发言</button>
+                            </div>
+                            <div class="col-md-6 column">
+                                <button type="button" class="btn btn-block btn-default">停止自动滚动</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <!-- /#wrapper -->
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+<script src="../js/index.js"></script>
+<script src="../student1.js"></script>
+<script src='../js/jquery.min.js'></script>
+<script src="../../all/jquery-3.3.1.min.js"></script>
+<script src="../src/prism.js"></script>
+<script src="../dist/spop.min.js"></script>
+<script src="../src/scripts.js"></script>
+
+<script type="text/javascript">
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+</html>

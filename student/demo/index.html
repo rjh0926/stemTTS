@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>stemTTS</title>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="../css/1_z.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" style="width: 105%;">
+    <div class="row clearfix" style="left:20%; width: 110%;">
+        <div class="col-md-8 column" style="left:5%;">
+            <h2>
+                STEM虚拟实习教师
+            </h2>
+        </div>
+        <div class="col-md-4 column">
+            <ul class="nav nav-pills">
+                <br>
+                <li style="left: 150px">
+                    <a href="#"> <span class="badge pull-right"></span>欢迎，
+                        <div id="username"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+
+                <div class="row clearfix" style="width: 85%;" id="box">
+                    <div class="col-md-4 column" id="left" style="display: inline-block;left:5%;width:77%" ;>
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="receive.html">收件箱</a>
+                            </li>
+                            <li>
+                                <a href="send.html">发件箱</a>
+                            </li>
+                            <li>
+                                <a href="library.html">资源库</a>
+                            </li>
+                        </ul>
+
+                        <!------------------------------------------------------------收件箱--------------------------------------------------------------------------------------->
+                        <div class="panel panel-info" style="overflow:hidden; width: 100%">
+                            <img src="../image/indexpic.png">
+                        </div>
+                    </div>
+                    <div class="col-md-4 column" id="right" style=" display: inline-block;left:4%;width:23%;">
+                        <div class="panel panel-primary" id="handle" style="width:100%;margin-bottom: 3px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="text-align: center">
+                                    小组聊天室&nbsp;
+                                    <select id="online">
+                                        <option>在线列表</option>
+                                        <option>梁晓颖(在线)</option>
+                                        <option>王亦冰(在线)</option>
+                                        <option>陆荣欣(离线)</option>
+                                        <option>故孜努尔(离线)</option>
+                                    </select>
+                                </h3>
+                            </div>
+                            <!--<script type="text/javascript">-->
+                                <!--document.getElementById('container1').onscroll = function () {-->
+                                    <!--console.log("scrolling");-->
+                                <!--};-->
+                            <!--</script>-->
+                            <div id="container1" style="height:330px;overflow-y: scroll;">
+                                <div class="panel-body" style="height:320px;">
+                                    聊天内容
+                                </div>
+                                <!--<div id="up">-->
+
+                                <!--</div>-->
+                            </div>
+                            <div class="panel-footer" style="height:120px;">
+                                <textarea style="width:100%;height:100%; background-color: #fff;border:0px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-6 column">
+                                <button type="button" class="btn btn-block btn-default">发言</button>
+                            </div>
+                            <div class="col-md-6 column">
+                                <button type="button" class="btn btn-block btn-default">停止自动滚动</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- /#wrapper -->
+
+    <div class="row clearfix" style="width: 100%">
+        <div class="col-md-12 column" style="height:50px">
+        </div>
+    </div>
+</div>
+
+<!--<script src='../js/jquery.js'></script>-->
+<!--<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>-->
+<!--<script src="../js/index.js"></script>-->
+
+
+<!--<script src="../src/prism.js"></script>-->
+<!--<script src="../dist/spop.min.js"></script>-->
+<!--<script src="../src/scripts.js"></script>-->
+
+<!--<script type="text/javascript">-->
+    <!--$("#menu-toggle").click(function (e) {-->
+        <!--e.preventDefault();-->
+        <!--$("#wrapper").toggleClass("toggled");-->
+    <!--});-->
+
+<!--</script>-->
+<script src="stu.js"></script>
+</body>
+</html>
